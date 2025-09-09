@@ -11,36 +11,102 @@
 
 <body>
     <header> <!--  generalmente es para la parte superior de la pagina-->
-        <h1> Encabezado de la pagina</h1>
+        <div style="background-color: antiquewhite; width: 25%;"> <!-- cabecera ptincipal-->
+            <img src="imagenes/pechirojo.jpg" />
+            <div style="background-color: aliceblue;"> <!-- menu principal-->
 
-        <nav> <!-- navegación o menu de opciones principal-->
-            <li> <a href="#"> Inicio</li> </a> <!-- li es para listas--> <!--a= anchor es para enlazar-->
-            <li> <a href="paginas/contactos.html">Contactos</li></a> <!-- ruta relativa-->
-            <!-- "a href="#" es para boton y # es el dirrecion de la pagina -->
-            <li> <a href="#">Regitrate</li></a>
-        </nav>
-    
+                <h1> Encabezado de la pagina</h1>
+
+                <nav> <!-- navegación o menu de opciones principal-->
+                    <li> <a href="#"> Inicio</li> </a> <!-- li es para listas--> <!--a= anchor es para enlazar-->
+                    <li> <a href="paginas/contactos.html">Contactos</li></a> <!-- ruta relativa-->
+                    <!-- "a href="#" es para boton y # es el dirrecion de la pagina -->
+                    <li> <a href="#">Regitrate</li></a>
+                </nav>
+            </div>
+            <div style="background-color: beige;"> <!-- redes sociales-->
+                <li> <a href="#facebook"> <img src="imagenes/facebook.jpg" style="width: 100 px; height: 100px;"> </a>
+                </li>
+                <li> <a href="#instagram"> <img src="imagenes/instagram.png" style="width: 100 px; height: 100px;"> </a>
+                </li>
+                <li> <a href="#yotube"> <img src="imagenes/youtube.jpg" style="width: 100 px; height: 100px;"> </a></li>
+            </div>
+            <div>
+                <form>
+                    <input type="password" d="Contraseña" name="Contraseña">
+                    <input type="submit" value="enviar">
+                    <button style="border: 1; width: 70px; height: 100%;background-color: beige;"><input type="submit"
+                            name="Regitrate" id="Regitrate"> </button>
+
+
+                </form>
+                <select>
+                    <option value="HTML"> selecionar el lenguaje</option>
+                    <option value=" html"> html</option>
+                    <option value="CSS"> CSS</option>
+                    <option value="javascript"> javascript"</option>
+                    <option value="C++"> C++</option>
+
+                </select>
+                <form>
+                    <label for="name"> nombre</label>
+                    <input type="text" id="name"> <br>
+                    <label for="name"> Apellido</label>
+                    <input type="text" id="Apellido"> <br>
+                    <input type="submit" value="enviar">
+                </form>
+
+
+            </div>
+        </div>
+
+
+
     </header>
     <main> <!-- contenido principal, bloque despues del header-->
         <!--h es para titulos y p es para parrafos-->
 
         <h1> Clase de programación básica </h1> <!-- titulo en negrilla-->
         <h2>Aprendiendo los concpetos basicos de programación </h2> <!-- titulo negrilla pequeño-->
-        <p>La etiqueta "p" <br/> es para parrafos</p> <!-- "br" es para bajar y dividir los textos-->
-
-        <ol> 
+        <p style="background-color: rgba(165, 99, 42, 0.579); font-family: Georgia, 'Times New Roman', Times, serif;">La
+            etiqueta "p" <br /> es para parrafos</p> <!-- "br" es para bajar y dividir los textos-->
+        <p style="background-color: rgba(165, 42, 56, 0.315);">La etiqueta "p" <br /> es para parrafos</p>
+        <p style="background-color: rgba(15, 83, 25, 0.445);">La etiqueta "p" <br /> es para parrafos</p>
+        <ol>
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3 </li>
-        
+
         </ol> <!--listas ordenadas-->
-       
+
         <ul>
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3 </li>
         </ul> <!--listas desordenas-->
-        
+        <table border="1"
+            style="background-color: rgba(55, 35, 9, 0.832); color: rgb(255, 254, 254); font-family: Georgia, 'Times New Roman', Times, serif;">
+            <tr>
+                <th> Ciudad</th>
+                <th> Departamento</th>
+                <th>Numero de habitantes</th>
+            </tr>
+            <tr>
+                <td>Ocaña</td>
+                <td> Norte de Santander</td>
+                <td>130.000</td>
+            </tr>
+            <tr>
+                <td>Cúcuta</td>
+                <td> Norte de Santander</td>
+                <td>100.000.000</td>
+            </tr>
+            <tr>
+                <td> Rio de oro</td>
+                <td> Cesar</td>
+                <td>10.000</td>
+            </tr>
+        </table>
 
     </main>
     <footer> <!-- pie de pagina-->
